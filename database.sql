@@ -1,0 +1,15 @@
+CREATE DATABASE IF NOT EXISTS volunteer_nexus;
+USE volunteer_nexus;
+
+CREATE TABLE IF NOT EXISTS users (
+    id    INT AUTO_INCREMENT PRIMARY KEY,
+    name  VARCHAR(100) NOT NULL,
+    email VARCHAR(150) NOT NULL UNIQUE
+);
+
+CREATE TABLE IF NOT EXISTS events (
+    id       INT AUTO_INCREMENT PRIMARY KEY,
+    title    VARCHAR(200) NOT NULL,
+    date     DATE NOT NULL,
+    location VARCHAR(200) NOT NULL
+);
