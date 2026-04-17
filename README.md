@@ -1,10 +1,14 @@
 <h1 align="center">🚀 Volunteer Nexus</h1>
-<h3 align="center">Full-Stack Volunteer Management SaaS Platform</h3>
+<h3 align="center">Full-Stack Volunteer Management System</h3>
 
 <p align="center">
   <img src="https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge&logo=react" />
-  <img src="https://img.shields.io/badge/Node.js-Backend-339933?style=for-the-badge&logo=node.js" />
-  <img src="https://img.shields.io/badge/Firebase-Database-FFCA28?style=for-the-badge&logo=firebase" />
+  <img src="https://img.shields.io/badge/Flask-Backend-000000?style=for-the-badge&logo=flask" />
+  <img src="https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql" />
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?color=00F7FF&size=30&center=true&vCenter=true&width=1100&lines=Full+Stack+Application;Volunteer+Management+System;Built+with+React+%2B+Flask;Real+World+Project+Architecture" />
 </p>
 
 ---
@@ -12,23 +16,38 @@
 ## 🧠 Overview
 
 ```
-Volunteer Nexus is a modern, full-stack volunteer management SaaS platform
-designed to connect volunteers with meaningful opportunities while providing
-organizations with powerful management tools.
+Volunteer Nexus is a full-stack web application designed to manage
+volunteer activities efficiently by connecting users with events
+through a structured system.
+
+It focuses on simplicity, scalability, and real-world usability.
 ```
 
 ---
 
-## 🚀 Features
+## 🏗️ System Architecture
 
 ```
-- Multi-Role Support: Volunteers, Organizations, Admins
-- Real-time Dashboard: Track hours and events
-- Event Management: Create, edit, delete events
-- Application System: Apply, approve, reject
-- Admin Panel: System monitoring and control
-- Modern UI/UX: Smooth SaaS experience
-- Secure Backend: Firebase Authentication + Firestore
+Frontend (React + Vite)
+        ↓
+API Layer (Flask Backend)
+        ↓
+Database (MySQL)
+        ↓
+Response → UI Update
+```
+
+---
+
+## 🚀 Core Features
+
+```
+- User registration system
+- Event listing and participation
+- Backend API handling with Flask
+- Database integration using MySQL
+- Simple and responsive UI
+- Full-stack data flow implementation
 ```
 
 ---
@@ -37,91 +56,91 @@ organizations with powerful management tools.
 
 ### Frontend
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=react" height="50"/>
-  <img src="https://skillicons.dev/icons?i=vite" height="50"/>
-  <img src="https://skillicons.dev/icons?i=tailwind" height="50"/>
-  <img src="https://skillicons.dev/icons?i=js" height="50"/>
-  <img src="https://skillicons.dev/icons?i=html" height="50"/>
-  <img src="https://skillicons.dev/icons?i=css" height="50"/>
+  <img src="https://skillicons.dev/icons?i=react,vite,js,html,css" height="55"/>
 </p>
 
 ```
-React 19
+React
 Vite
-Tailwind CSS
-Framer Motion
-Recharts
-Lucide Icons
+JavaScript
+HTML
+CSS
 ```
 
 ---
 
 ### Backend
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=nodejs" height="50"/>
-  <img src="https://skillicons.dev/icons?i=express" height="50"/>
+  <img src="https://skillicons.dev/icons?i=python,flask" height="55"/>
 </p>
 
 ```
-Node.js
-Express.js
+Python
+Flask
+REST API
 ```
 
 ---
 
-### Database & Authentication
+### Database
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=firebase" height="50"/>
+  <img src="https://skillicons.dev/icons?i=mysql" height="55"/>
 </p>
 
 ```
-Firebase Firestore
-Firebase Authentication
+MySQL
+Relational Database Design
 ```
 
 ---
 
-## 📦 Installation & Setup
+## ⚙️ Project Structure
 
-### Clone Repository
+```
+/frontend
+  ├── main.jsx
+  ├── App.jsx
+  ├── index.html
+/backend
+  ├── app.py
+/database
+  ├── database.sql
+```
 
+---
+
+## 🔄 Data Flow
+
+```
+User Action → React UI → API Call → Flask Backend
+→ MySQL Database → Response → UI Update
+```
+
+---
+
+## ⚙️ Setup & Installation
+
+### Clone
 ```bash
 git clone https://github.com/mav8stro/volunteer-nexus.git
 cd volunteer-nexus
 ```
 
----
-
-### Install Dependencies
-
+### Frontend
 ```bash
 npm install
-```
-
----
-
-### Environment Variables
-
-```env
-GEMINI_API_KEY=your_api_key
-APP_URL=http://localhost:5173
-```
-
----
-
-### Firebase Setup
-
-```text
-- Configure firebase-applet-config.json
-- Apply rules from firestore.rules
-```
-
----
-
-### Run Application
-
-```bash
 npm run dev
+```
+
+### Backend
+```bash
+pip install -r requirements.txt
+python app.py
+```
+
+### Database
+```sql
+Run database.sql in MySQL
 ```
 
 ---
@@ -129,21 +148,21 @@ npm run dev
 ## 📊 Highlights
 
 ```
-- Full-stack SaaS architecture
-- Role-based system
-- Scalable structure
-- Real-world workflow
+- Full-stack architecture (Frontend + Backend + DB)
+- Clean separation of concerns
+- Real-world workflow implementation
+- Beginner-friendly but scalable structure
 ```
 
 ---
 
-## 🔥 Future Enhancements
+## 🚀 Future Improvements
 
 ```
-- Notifications system
-- AI recommendations
-- Deployment
-- Mobile optimization
+- Authentication system
+- Role-based access
+- Dashboard analytics
+- Deployment (Cloud)
 ```
 
 ---
@@ -151,14 +170,14 @@ npm run dev
 ## 💣 One-Line Summary
 
 ```
-A scalable SaaS platform for managing volunteer engagement and events efficiently.
+A full-stack volunteer management system built using React, Flask, and MySQL.
 ```
 
 ---
 
 ## 👨‍💻 Author
 
-```text
+```
 Muhammed Salman N
 Email: muhammedsalmanbinnoor@gmail.com
 GitHub: https://github.com/mav8stro
@@ -168,6 +187,6 @@ GitHub: https://github.com/mav8stro
 
 ## 📄 License
 
-```text
+```
 Apache-2.0
 ```
